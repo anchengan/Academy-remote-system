@@ -1,0 +1,10 @@
+-title: "settings"
+-description: "settings of academy_client"
+-server:
+--address: ["0.0.0.0" , "0.0.0.0"]
+--addressend:
+--port: ["6999" , "6998" , "6997" , "6996"]
+--portend:
+-macdevice: "eth0"
+-macdeviceend:
+-end:
