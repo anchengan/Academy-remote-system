@@ -82,7 +82,7 @@ func Receiver(name *C.char,passwd *C.char,ip_info *C.char,port_info *C.char) {
 		    for{
 			var stdout, stderr bytes.Buffer
 		        message,err:=reader.ReadString('\n')
-			ret_msg:=strings.Split(message, "-")
+			ret_msg:=strings.Split(message, "-ACA-")
 			if ret_msg[0]!= C.GoString(name) || ret_msg[1]!= C.GoString(passwd){
                            continue
 			}

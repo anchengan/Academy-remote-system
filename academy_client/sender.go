@@ -46,7 +46,7 @@ func Sender(name *C.char,passwd *C.char,ip_info *C.char,port_info *C.char) {
 			    if strings.ToLower(text) == "exit"{
                                 break
 	                    }
-			    text=C.GoString(name)+string('-')+C.GoString(passwd)+string('-')+text
+			    text=C.GoString(name)+"-ACA-"+C.GoString(passwd)+"-ACA-"+text
 			    fmt.Fprintf(conn,text)
 			    pauseChan=false
 		        }else{
